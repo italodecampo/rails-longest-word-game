@@ -1,0 +1,15 @@
+<h1>Result</h1>
+
+<p>Your word: <strong><%= @word %></strong></p>
+
+<p>Letter grid was:</p>
+<ul class="letter-grid">
+  <% @letters.each do |letter| %>
+    <li><%= letter %></li>
+  <% end %>
+</ul>
+
+<p><strong><%= @message %></strong></p>
+<p><strong><%= @score %></strong></p>
+
+<%= link_to "Play again", new_path %>
